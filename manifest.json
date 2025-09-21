@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Twitch Auto Switch on Stream End",
+  "description": "Automatically switch to another stream when the current Twitch stream ends",
+  "version": "1.0",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://www.twitch.tv/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
